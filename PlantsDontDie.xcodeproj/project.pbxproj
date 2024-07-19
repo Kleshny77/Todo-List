@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F9A21272C4A5965001D4962 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A21262C4A5965001D4962 /* NetworkManager.swift */; };
 		1E677FA82C4A4469003B1708 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E677FA72C4A4469003B1708 /* AppViewModel.swift */; };
 		1E677FAA2C4A44A9003B1708 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E677FA92C4A44A9003B1708 /* RegistrationView.swift */; };
 		20587690262B07F700CF6292 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2058768F262B07F700CF6292 /* Priority.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F9A21262C4A5965001D4962 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1E677FA72C4A4469003B1708 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		1E677FA92C4A44A9003B1708 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		2058768F262B07F700CF6292 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9A21252C4A566E001D4962 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A21262C4A5965001D4962 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		20A32E4C2621BEF9009396C2 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 		20A32E572621BEF9009396C2 /* SwiftUIList */ = {
 			isa = PBXGroup;
 			children = (
+				0F9A21252C4A566E001D4962 /* Networking */,
 				20A32E692621BF74009396C2 /* Model */,
 				20A32E752621D1D5009396C2 /* View */,
 				20A32E742621D1CC009396C2 /* ViewModel */,
@@ -185,6 +196,7 @@
 			files = (
 				20A32E6F2621C253009396C2 /* TodoListViewModel.swift in Sources */,
 				20FDB80E262C86CD00FA4EAE /* ListItemView.swift in Sources */,
+				0F9A21272C4A5965001D4962 /* NetworkManager.swift in Sources */,
 				1E677FA82C4A4469003B1708 /* AppViewModel.swift in Sources */,
 				1E677FAA2C4A44A9003B1708 /* RegistrationView.swift in Sources */,
 				20587690262B07F700CF6292 /* Priority.swift in Sources */,
