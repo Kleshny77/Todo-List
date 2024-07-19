@@ -26,7 +26,7 @@
 		1E677FA72C4A4469003B1708 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		1E677FA92C4A44A9003B1708 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		2058768F262B07F700CF6292 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
-		20A32E552621BEF9009396C2 /* SwiftUIList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A32E552621BEF9009396C2 /* PlantsDontDie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantsDontDie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A32E582621BEF9009396C2 /* SwiftUIListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIListApp.swift; sourceTree = "<group>"; };
 		20A32E5A2621BEF9009396C2 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		20A32E5C2621BEFA009396C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		20A32E562621BEF9009396C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20A32E552621BEF9009396C2 /* SwiftUIList.app */,
+				20A32E552621BEF9009396C2 /* PlantsDontDie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20A32E542621BEF9009396C2 /* SwiftUIList */ = {
+		20A32E542621BEF9009396C2 /* PlantsDontDie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20A32E642621BEFA009396C2 /* Build configuration list for PBXNativeTarget "SwiftUIList" */;
+			buildConfigurationList = 20A32E642621BEFA009396C2 /* Build configuration list for PBXNativeTarget "PlantsDontDie" */;
 			buildPhases = (
 				20A32E512621BEF9009396C2 /* Sources */,
 				20A32E522621BEF9009396C2 /* Frameworks */,
@@ -140,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUIList;
+			name = PlantsDontDie;
 			productName = SwiftUIList;
-			productReference = 20A32E552621BEF9009396C2 /* SwiftUIList.app */;
+			productReference = 20A32E552621BEF9009396C2 /* PlantsDontDie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20A32E502621BEF9009396C2 /* Build configuration list for PBXProject "SwiftUIList" */;
+			buildConfigurationList = 20A32E502621BEF9009396C2 /* Build configuration list for PBXProject "PlantsDontDie" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -172,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20A32E542621BEF9009396C2 /* SwiftUIList */,
+				20A32E542621BEF9009396C2 /* PlantsDontDie */,
 			);
 		};
 /* End PBXProject section */
@@ -373,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20A32E502621BEF9009396C2 /* Build configuration list for PBXProject "SwiftUIList" */ = {
+		20A32E502621BEF9009396C2 /* Build configuration list for PBXProject "PlantsDontDie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20A32E622621BEFA009396C2 /* Debug */,
@@ -382,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20A32E642621BEFA009396C2 /* Build configuration list for PBXNativeTarget "SwiftUIList" */ = {
+		20A32E642621BEFA009396C2 /* Build configuration list for PBXNativeTarget "PlantsDontDie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20A32E652621BEFA009396C2 /* Debug */,

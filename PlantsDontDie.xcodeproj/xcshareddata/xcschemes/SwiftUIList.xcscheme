@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "20A32E542621BEF9009396C2"
-               BuildableName = "SwiftUIList.app"
-               BlueprintName = "SwiftUIList"
-               ReferencedContainer = "container:SwiftUIList.xcodeproj">
+               BuildableName = "PlantsDontDie.app"
+               BlueprintName = "PlantsDontDie"
+               ReferencedContainer = "container:PlantsDontDie.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20A32E542621BEF9009396C2"
-            BuildableName = "SwiftUIList.app"
-            BlueprintName = "SwiftUIList"
-            ReferencedContainer = "container:SwiftUIList.xcodeproj">
+            BuildableName = "PlantsDontDie.app"
+            BlueprintName = "PlantsDontDie"
+            ReferencedContainer = "container:PlantsDontDie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "20A32E542621BEF9009396C2"
-            BuildableName = "SwiftUIList.app"
-            BlueprintName = "SwiftUIList"
-            ReferencedContainer = "container:SwiftUIList.xcodeproj">
+            BuildableName = "PlantsDontDie.app"
+            BlueprintName = "PlantsDontDie"
+            ReferencedContainer = "container:PlantsDontDie.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

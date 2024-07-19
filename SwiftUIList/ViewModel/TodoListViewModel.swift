@@ -91,7 +91,7 @@ class TodoListViewModel: ObservableObject {
         guard item.hasNotification else { return }
 
         let content = UNMutableNotificationContent()
-        content.title = "Task reminder"
+        content.title = "Цветок помирает, он хочет жить"
         content.body = item.title
         content.sound = .default
 

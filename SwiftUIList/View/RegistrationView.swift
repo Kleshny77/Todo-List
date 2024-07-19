@@ -2,16 +2,18 @@ import SwiftUI
 
 struct RegistrationView: View {
     @EnvironmentObject var appViewModel: AppViewModel
-    @State private var name: String = ""
+    @State private var username: String = ""
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
     @State private var showAlert: Bool = false
     @State private var alertMessage: String = ""
+    
+    @StateObject private var networkManager = NetworkManager()
 
     var body: some View {
         NavigationView {
             VStack(spacing: 30) {
-                TextField("Name", text: $name)
+                TextField("Name", text: $username)
                     .padding()
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
@@ -26,20 +28,30 @@ struct RegistrationView: View {
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
 
-                Button(action: {
-                    if validateForm() {
-                        appViewModel.isLogin = true
-                        UserDefaults.standard.set(true, forKey: "isLogin")
-                        alertMessage = "Registration was successful!"
-                        showAlert = true
+                if networkManager.isLoading {
+                    ProgressView()
+                } else {
+                    Button(action: {
+                        if validateForm() {
+                            networkManager.register(username: username, password: password) { success, message in
+                                alertMessage = message
+                                if success {
+                                    appViewModel.isLogin = true
+                                    UserDefaults.standard.set(true, forKey: "isLogin")
+                                } else {
+                                    print(success, message)
+                                }
+                                showAlert = true
+                            }
+                        }
+                    }) {
+                        Text("Register")
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.blue)
+                            .cornerRadius(10)
                     }
-                }) {
-                    Text("Register")
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .cornerRadius(10)
                 }
             }
             .padding()
@@ -47,11 +59,14 @@ struct RegistrationView: View {
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Registration"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
             }
+//            .background(NavigationLink(destination: TodoListView(), isActive: $appViewModel.isLogin) {
+//                
+//            })
         }
     }
 
     private func validateForm() -> Bool {
-        if name.isEmpty || password.isEmpty || confirmPassword.isEmpty {
+        if username.isEmpty || password.isEmpty || confirmPassword.isEmpty {
             alertMessage = "Please fill in all the fields."
             showAlert = true
             return false
@@ -70,3 +85,5 @@ struct RegistrationView: View {
 #Preview {
     RegistrationView()
 }
+
+
